@@ -1,0 +1,19 @@
+.SkillContain{
+    margin-top: 125px;
+}
+
+.SkillContain h1{
+    color: #8ea03c;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.SkillBox{
+    padding: 50px;
+}
+
+.alignIcon{
+    text-align: center;
+}
+
