@@ -10,6 +10,7 @@ import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Skill from "./Skill";
+import WIPproject from "./WIPproject";
 
 
 
@@ -20,10 +21,10 @@ const Navibar = () => {
   return (
     <div>
       <Route exact path="/">
-        <Redirect to="/home"></Redirect>
+        <Redirect to="/"></Redirect>
       </Route>
 
-      <Route render={() => setRpath("home")} exact path="/home">
+      <Route render={() => setRpath("home")} exact path="/">
       </Route>
 
       <Route render={() => setRpath("about")} exact path="/about">
@@ -35,7 +36,7 @@ const Navibar = () => {
       <Route render={() => setRpath("project")} exact path="/project">
       </Route>
 
-      <Route render={() => setRpath("contact")} exact path="/contact">
+      <Route render={() => setRpath("wipproject")} exact path="/wipproject">
       </Route>
 
 
@@ -44,17 +45,20 @@ const Navibar = () => {
           <Col>
             <Nav variant="pills" activeKey={Rpath} >
               <Nav.Item>
-                <Nav.Link eventKey="home" onClick={() => history.push("/home")}>Home
+                <Nav.Link eventKey="home" onClick={() => history.push("/")}>Home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="about" onClick={() => history.push("/about")}>About Me</Nav.Link>
+                <Nav.Link eventKey="about" onClick={() => history.push("/about")}>About</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="skill" onClick={() => history.push("/skill")}>Skills</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="project" onClick={() => history.push("/project")}>Projects</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="wipproject" onClick={() => history.push("/wipproject")}>WIP Projects</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -71,9 +75,6 @@ const Navibar = () => {
 
       <div>
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
 
           <Route path="/about">
             <About />
@@ -85,6 +86,14 @@ const Navibar = () => {
 
           <Route path="/project">
             <Projects />
+          </Route>
+
+            <Route path="/wipproject">
+            <WIPproject />
+          </Route>
+
+             <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>

@@ -1,14 +1,22 @@
-.AboutContain{
-    margin-top: 125px;
+.AboutContain {
+  margin-top: 125px;
 }
 
-.AboutBox{
-    padding: 50px;
+.AboutBox {
+  padding: 75px;
 }
 
-.AboutContain h1{
-    color: #8ea03c;
-    font-size: 50px;
-    text-align: center;
-    padding: 10px;
+.AboutContain h1 {
+  color: #8ea03c;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.AboutContain h2 {
+  font-size: 40px;
+}
+
+.AboutContain p {
+  font-size: 25px;
 }
