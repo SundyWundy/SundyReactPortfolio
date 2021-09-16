@@ -1,12 +1,4 @@
-.NavDeco{
-    background-color: aqua;
+.NavDec {
+  justify-content: end;
+  margin-right: 10%;
 }
-
-/*
-Navbar
-bg="dark" */
-
-Nav.Link{
-    background-color: yellow;
-}
-

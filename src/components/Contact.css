@@ -1,0 +1,38 @@
+.ContactContain {
+  margin-top: 125px;
+  text-align: center;
+}
+
+.ContactContain h1 {
+  color: #8ea03c;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.inputBox {
+  height: 35px;
+  width: 100%;
+  max-width: 750px;
+}
+
+.msgBox {
+  height: 250px;
+  width: 100%;
+  max-width: 750px;
+  padding-bottom: 215px;
+}
+
+.Icons {
+  margin: 25px;
+}
+
+.link {
+  margin: 25px;
+}
+
+.submitBtn {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+}

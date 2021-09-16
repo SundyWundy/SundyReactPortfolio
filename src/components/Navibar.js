@@ -2,7 +2,7 @@ import { Nav, Navbar, Row, Col } from "react-bootstrap"
 import "./Navibar.css";
 
 import 'bootstrap/dist/css/bootstrap.css'
-import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai"
+
 
 import React, { useState } from "react";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom"
@@ -11,6 +11,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Skill from "./Skill";
 import WIPproject from "./WIPproject";
+import Contact from "./Contact";
 
 
 
@@ -39,13 +40,17 @@ const Navibar = () => {
       <Route render={() => setRpath("wipproject")} exact path="/wipproject">
       </Route>
 
+      <Route render={() => setRpath("contact")} exact path="/contact">
+      </Route>
+
 
       <Row>
-        <Navbar className="NavDeco" bg="dark" variant="dark" fixed="top">
+        <Navbar bg="dark" variant="dark" fixed="top">
+          <Col></Col>
           <Col>
-            <Nav variant="pills" activeKey={Rpath} >
+            <Nav className="NavDec" variant="pills" activeKey={Rpath} >
               <Nav.Item>
-                <Nav.Link eventKey="home" onClick={() => history.push("/")}>Home
+                <Nav.Link className="NavLink" eventKey="home" onClick={() => history.push("/")}>Home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -60,14 +65,9 @@ const Navibar = () => {
               <Nav.Item>
                 <Nav.Link eventKey="wipproject" onClick={() => history.push("/wipproject")}>WIP Projects</Nav.Link>
               </Nav.Item>
-            </Nav>
-          </Col>
-
-          <Col>
-            <Nav className="justify-content-end" style={{ marginRight: "20px" }}>
-              <a class="nav-link" href="mailto: sundypongpuntara@yahoo.com" rel="noreferrer" target="_blank"><AiOutlineMail size={30} /></a>
-              <a class="nav-link" href="https://www.linkedin.com/in/sundypongpuntara/" rel="noreferrer" target="_blank"><AiFillLinkedin size={30} /></a>
-              <a class="nav-link" href="https://github.com/SundyWundy" rel="noreferrer" target="_blank"><AiFillGithub size={30} /></a>
+              <Nav.Item>
+                <Nav.Link eventKey="contact" onClick={() => history.push("/contact")}>Contact</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
         </Navbar>
@@ -90,6 +90,10 @@ const Navibar = () => {
 
             <Route path="/wipproject">
             <WIPproject />
+          </Route>
+
+             <Route path="/contact">
+            <Contact />
           </Route>
 
              <Route path="/">
