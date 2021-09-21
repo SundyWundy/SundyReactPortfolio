@@ -8,13 +8,19 @@ const Projects = () => {
     const projectData = [
         {
             name: "Minecraft Museum",
-            description: "A website that provides informations on items, blocks, mobs, and a virtual reality museum of Minecraft.",
+            description: "A website that provides informations on items, blocks, mobs, and a virtual reality museum of Minecraft. Made with HTML, CSS, Bootstrap, and A-frame",
             github: "https://github.com/SundyWundy/MinecraftMuseum",
             site: "https://sundywundy.github.io/MinecraftMuseum/",
         },
         {
+            name: "Todo List",
+            description: "A todo website made with React, Material-UI, React-bootstrap, and uuid. ",
+            github: "https://github.com/SundyWundy/Todo",
+            site: "https://sundywundy.github.io/Todo/",  
+        },
+        {
             name: "Unison",
-            description: "A calendar application made with android studio. This application use firebase to store many users account and are able to share their calendar with other users for planning. Kotlin is used for the programming language.",
+            description: "A calendar application made with Android Studio. This application use firebase to store many users account and are able to share their calendar with other users for planning. Kotlin is used for the programming language.",
             github: "https://github.com/SundyWundy/Unison?",
             site: "",
         },
