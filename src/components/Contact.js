@@ -19,7 +19,7 @@ export default function Contact() {
             <br></br><br></br>
             <input className="inputBox" type="email" name="email" placeholder="Email" required />
             <br></br><br></br>
-             <input className="msgBox" type ="text" name="message" placeholder="Message" required />
+            <textarea className="msgBox" type ="text" name="message" placeholder="Message" required />
             <br></br><br></br>
             <button className="submitBtn" type="submit">SEND</button>
 
