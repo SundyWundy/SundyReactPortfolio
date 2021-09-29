@@ -19,6 +19,12 @@ const Projects = () => {
             site: "https://sundywundy.github.io/Todo/",  
         },
         {
+            name: "Currency Rates",
+            description: "Currency exchange rates from all over the world made with React, and axios.",
+            github: "https://github.com/SundyWundy/CurrencyRates",
+            site: "https://sundywundy.github.io/CurrencyRates/",  
+        },
+        {
             name: "Unison",
             description: "A calendar application made with Android Studio. This application use firebase to store many users account and are able to share their calendar with other users for planning. Kotlin is used for the programming language.",
             github: "https://github.com/SundyWundy/Unison?",
