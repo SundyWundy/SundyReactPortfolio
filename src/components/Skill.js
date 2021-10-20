@@ -69,7 +69,6 @@ const Skill = () => {
 
     return (
         <div>
-
             <Container className="SkillContain">
                 <h1>Skills</h1>
                 <br></br><br></br>
