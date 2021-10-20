@@ -1,16 +1,12 @@
 import { Nav, Navbar, Row, Col } from "react-bootstrap"
 import "./Navibar.css";
-
 import 'bootstrap/dist/css/bootstrap.css'
-
-
 import React, { useState } from "react";
 import { Redirect, Route, Switch, useHistory } from "react-router-dom"
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Skill from "./Skill";
-import WIPproject from "./WIPproject";
 import Contact from "./Contact";
 
 
@@ -37,9 +33,6 @@ const Navibar = () => {
       <Route render={() => setRpath("project")} exact path="/project">
       </Route>
 
-      <Route render={() => setRpath("wipproject")} exact path="/wipproject">
-      </Route>
-
       <Route render={() => setRpath("contact")} exact path="/contact">
       </Route>
 
@@ -63,9 +56,6 @@ const Navibar = () => {
                 <Nav.Link eventKey="project" onClick={() => history.push("/project")}>Projects</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="wipproject" onClick={() => history.push("/wipproject")}>WIP Projects</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
                 <Nav.Link eventKey="contact" onClick={() => history.push("/contact")}>Contact</Nav.Link>
               </Nav.Item>
             </Nav>
@@ -86,10 +76,6 @@ const Navibar = () => {
 
           <Route path="/project">
             <Projects />
-          </Route>
-
-            <Route path="/wipproject">
-            <WIPproject />
           </Route>
 
              <Route path="/contact">
