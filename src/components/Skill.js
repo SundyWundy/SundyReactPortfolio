@@ -57,6 +57,13 @@ const Skill = () => {
             altIcon: "node js",
             height: "100px",
             width: "150px"
+        },
+        {
+            name: "Firebase",
+            logo: "assets/firebase.png",
+            altIcon: "Firebase",
+            height: "100px",
+            width: "150px"
         }
     ]
 
